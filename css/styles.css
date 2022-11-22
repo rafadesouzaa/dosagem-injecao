@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  
+  body {
+    background-color: #102D69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    
+    
+  }
+
+ 
+    
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #004b87;
+    padding: 2rem;
+  }
+  
+  
+  #calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .form-control {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .form-control input {
+    padding: 0.75rem 0.5rem;
+  }
+  
+  .action-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  button {
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    
+    border: none;
+    
+    cursor: pointer;
+    
+    flex: 1;
+    margin: center;
+  }
+.button1{
+background-color: #ff671f;
+  opacity: 0.9;
+  color: #fff;
+  padding: 1rem 5rem;
+
+
+}
+
+.button2 {
+  background-color: #ff671f;
+  opacity: 0.5;
+  color: #fff;
+  padding: 1rem 5rem;
+
+}
+
+.button3 {
+  background-color: #ff671f;
+  opacity: 0.9;
+  color: #fff;
+  padding: 1rem 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+ 
+  
+  /* Table */
+  #result-container {
+    text-align: center;
+  }
+  
+
+
+  
+  #result-container h3 {
+    margin-top: 1rem;
+    color: #dfdfdf;
+  }
+  
+  #result-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+  
+  #back-btn {
+    align-self: center;
+  }
+  
+ 
