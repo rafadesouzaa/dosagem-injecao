@@ -24,7 +24,7 @@ $terminolenta = $dos - 1 - ($pesocanal * $cav * 1000 * $capdos) / $capmaq;
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Dosagem</title>
+    <title>Dosagem e Tempo</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,37 +46,41 @@ $terminolenta = $dos - 1 - ($pesocanal * $cav * 1000 * $capdos) / $capmaq;
 
 
 
+                <div class="fontcolor">
+                    <div class="form-control">
+                        <label for="dos">Dosagem: <?php echo number_format($dos, 1); ?></label>
 
-                <div class="form-control">
-                    <label for="dos">Dosagem: <?php echo number_format($dos, 2); ?></label>
+                    </div>
 
+
+                    <div class="form-control">
+                        <label for="iniciolenta">Início da Lenta: <?php echo number_format($iniciolenta, 1); ?>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="terminolenta">Término da Lenta: <?php echo number_format($terminolenta, 1); ?></label>
+                    </div>
                 </div>
 
 
-                <div class="form-control">
-                    <label for="iniciolenta">Início da Lenta: <?php echo number_format($iniciolenta, 2); ?>
-                </div>
-
-                <div class="form-control">
-                    <label for="terminolenta">Término da Lenta: <?php echo number_format($terminolenta, 2); ?></label>
-                </div>
-
-               
-
-
+                <br>
 
             </form>
-            <a href="index.html"><button class="button3">Voltar</button></a>
+            <div class="lado">
+                <div class="center">
+                    <a href="index.html"><button class="button1">voltar</button></a>
+                </div>
+            </div>
+
 
 
             <br>
-            <br>
-            <label for="">Participações:</label><br>
-            <label for="">Rafael de Souza (Desenvolvimento)</label><br>
-            <label for="">Roberto Cabral de Oliveira (Suporte Técnico)</label><br>
-            <label for="">TIGRE - CORC - Injeção</label><br>
+            <div class="fontcolor">
+                <label for="">Rafael de Souza (Desenvolvimento)</label><br>
+                <label for="">Roberto Cabral de Oliveira (Suporte Técnico)</label><br>
+                <label for="">TIGRE - CORC - Injeção</label><br>
 
-
+            </div>
 
         </div>
 

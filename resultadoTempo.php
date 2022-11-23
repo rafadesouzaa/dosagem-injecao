@@ -6,11 +6,11 @@ $tempociclo = $_POST['tempociclo'];
 
 
 
-$tempoRecalque = $tempociclo * 0.1;
+$tempoReqFina = $tempociclo * 0.05;
+$tempoRefrigFina = $tempociclo * 0.75;
 
-$tempoRefrigFina = $tempociclo * 0.6;
-
-$tempoRefrigGrossa = $tempociclo * 0.7;
+$tempoReqGrossa = $tempociclo * 0.1;
+$tempoRefrigGrossa = $tempociclo * 0.6;
 
 ?>
 
@@ -22,7 +22,7 @@ $tempoRefrigGrossa = $tempociclo * 0.7;
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Dosagem</title>
+    <title>Dosagem e Tempo</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,39 +43,57 @@ $tempoRefrigGrossa = $tempociclo * 0.7;
 
 
 
+                <div class="fontcolor">
+                    <div class="form-control">
+                        <label for="tempoRecalque">Parede Fina:</label>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="tempoRecalque">Tempo de Recalque: <?php echo number_format($tempoReqFina, 2); ?> s</label>
+                    </div>
+                    <div class="form-control">
+                        <label for="tempoRefrigFina">Tempo de Refrigeração: <?php echo number_format($tempoRefrigFina, 2); ?> s</label>
+                    </div>
+                </div>
+                <br>
+
+                <div class="fontcolor">
+                    <div class="form-control">
+                        <label for="tempoRecalque">Parede Grossa:</label>
+                    </div>
+                    <div class="form-control">
+                        <label for="tempoRecalque">Tempo de Recalque: <?php echo number_format($tempoReqGrossa, 2); ?> s</label>
+                    </div>
 
 
+                    <div class="form-control">
+                        <label for="tempoRefrigGrossa">Tempo de Refrigeração: <?php echo number_format($tempoRefrigGrossa, 2); ?> s</label>
 
-
-                <div class="form-control">
-                    <label for="tempoRecalque">Tempo de Recalque: <?php echo number_format($tempoRecalque, 2); ?> s</label>
+                    </div>
 
                 </div>
-
-                <div class="form-control">
-                    <label for="tempoRefrigFina">Tempo de Refrigeração (Parede Fina): <?php echo number_format($tempoRefrigFina, 2); ?> s</label>
-
-                </div>
-
-                <div class="form-control">
-                    <label for="tempoRefrigGrossa">Tempo de Refrigeração (Parede Grossa): <?php echo number_format($tempoRefrigGrossa, 2); ?> s</label>
-
-                </div>
-
-
 
             </form>
-            <a href="tempo.html"><button class="button3">Voltar</button></a>
 
 
             <br>
-            <br>
-            <label for="">Participações:</label><br>
+
+            <div class="lado">
+                <div class="center">
+                    <a href="tempo.html"><button class="button1">voltar</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <br>
+
+        <div class="fontcolor">
             <label for="">Rafael de Souza (Desenvolvimento)</label><br>
             <label for="">Roberto Cabral de Oliveira (Suporte Técnico)</label><br>
             <label for="">TIGRE - CORC - Injeção</label><br>
-
-
 
         </div>
 
